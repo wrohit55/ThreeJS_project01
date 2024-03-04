@@ -12,17 +12,17 @@ const Hero = () => {
         <div className="flex flex-col
          items-center justify-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient"/>
+          <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi , we'r <span className='text-[#915eff]'>Youth IT</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100` }>we develop a costume software for <br className='sm:block hidden'/> your individual business industry</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>we develop a costume software for <br className='sm:block hidden' /> your individual business industry</p>
         </div>
 
       </div>
-    
-      {/* <ComputersCanvas/> */}
- 
+
+      <ComputersCanvas />
+
     </section>
   )
 }
