@@ -18,7 +18,6 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>Hi , we'r <span className='text-[#915eff]'>Youth IT</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>we develop a costume software for <br className='sm:block hidden' /> your individual business industry</p>
         </div>
-
       </div>
 
       <ComputersCanvas />
@@ -38,7 +37,6 @@ const Hero = () => {
           />
           </div>
         </a>
-        
       </div>
 
     </section>

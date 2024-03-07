@@ -9,8 +9,8 @@ const Computers = () => {
   const Computer = useGLTF('./desktop_pc/scene.gltf');
   return (
     <mesh>
-      {/* <hemisphereLight intensity={0.15}
-        groundColor="black" /> */}
+      <hemisphereLight intensity={0.15}
+        groundColor="black" />
       <pointLight intensity={1} />
       <spotLight
         position={[-20, 50, 20]}
@@ -30,6 +30,12 @@ const Computers = () => {
   )
 }
 const ComputersCanvas = () => {
+  const [isMobile, setMobile] = useState(false);
+  useEffect(() =>{
+    const mediaQuery = window.matchMedia('(max-width: 5000')
+  })
+
+
   return (
     <Canvas
       frameloop='demand'
@@ -40,8 +46,8 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minAzimuthAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI /2}
+          minAzimuthAngle={Math.PI /2}
         />
         <Computers />
       </Suspense>

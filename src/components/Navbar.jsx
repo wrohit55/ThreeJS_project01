@@ -21,7 +21,7 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0,0);
         }}>
-          <img src={logo} alt='Logo' className='w-12 h-12 object-contain' />
+          <img src={logo} alt='Logo' className='w-10 h-12 object-contain' />
           <p className='text-whit text-[16px] font-bold cursor-pointer'>Youth IT <span className='sm:block hidden'>| Coding the future </span></p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
